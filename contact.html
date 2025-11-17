@@ -1,104 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Contact – SpaceEagle</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="site">
-      <header class="site-header">
-        <div class="header-inner">
-          <a href="index.html" class="logo-wrap">
-            <div class="logo-badge">
-              <img src="spaceeagle-logo.svg" alt="SpaceEagle logo" />
-            </div>
-            <div class="logo-text">SpaceEagle</div>
-          </a>
-          <nav class="nav-links">
-            <a href="index.html">Products</a>
-            <a href="contact.html">Contact</a>
-          </nav>
-          <a href="contact.html" class="header-cta">Talk to SpaceEagle</a>
-        </div>
-      </header>
+<html><head><link rel='stylesheet' href='styles.css'><title>Contact SpaceEagle</title></head>
+<body>
+<header><a href='index.html'><img src='spaceeagle-logo.svg'></a><h2>SpaceEagle</h2>
+<nav><a href='about.html'>About</a><a href='contact.html'>Contact</a></nav></header>
 
-      <main class="site-main">
-        <div class="container">
-          <h1 class="detail-title" style="font-size: 1.6rem">
-            Contact SpaceEagle
-          </h1>
-          <p class="form-intro">
-            Share a bit about your context and which Eagle products you’re
-            interested in. We’ll use this to match connectivity, geospatial
-            intelligence and climate services to your situation.
-          </p>
+<div class='section'>
+<h1>Contact Us</h1>
+<p>Our team is ready to support your connectivity, geospatial, or intelligence needs.</p>
 
-          <form
-            class="form"
-            action="mailto:info@spaceeagle.example"
-            method="post"
-            enctype="text/plain"
-          >
-            <div class="form-group form-row">
-              <input type="text" name="firstName" placeholder="First name" />
-              <input type="text" name="lastName" placeholder="Last name" />
-            </div>
+<form action="mailto:info@spaceeagle.space" method="post" enctype="text/plain" style='max-width:600px;'>
+<label>Name<br><input type='text' name='name'></label><br><br>
+<label>Email<br><input type='email' name='email'></label><br><br>
+<label>Message<br><textarea name='message' rows='6'></textarea></label><br><br>
+<button type='submit'>Send Message</button>
+</form>
+</div>
 
-            <div class="form-group">
-              <input
-                type="email"
-                name="email"
-                placeholder="Email *"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <input
-                type="text"
-                name="organisation"
-                placeholder="Organisation"
-              />
-            </div>
-
-            <div class="form-group">
-              <select name="product">
-                <option value="">Product of interest</option>
-                <option value="EagleNet">EagleNet</option>
-                <option value="EagleHome">EagleHome</option>
-                <option value="EagleVillage">EagleVillage</option>
-                <option value="EagleMap">EagleMap</option>
-                <option value="EagleGeo">EagleGeo</option>
-                <option value="EagleAgri">EagleAgri</option>
-                <option value="EagleRisk">EagleRisk</option>
-                <option value="EagleClimate">EagleClimate</option>
-                <option value="EagleSAS">EagleSAS</option>
-                <option value="EagleSovereign">EagleSovereign</option>
-                <option value="EagleCapacity">EagleCapacity</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <textarea
-                name="message"
-                placeholder="Tell us about your needs, location, partners, timelines…"
-              ></textarea>
-            </div>
-
-            <button type="submit" class="form-submit">
-              Send message
-            </button>
-          </form>
-        </div>
-      </main>
-
-      <footer class="site-footer">
-        <div class="footer-inner">
-          <div>© 2025 SpaceEagle. All rights reserved.</div>
-          <div>Broadband • Geospatial • Climate &amp; Risk • Capacity</div>
-        </div>
-      </footer>
-    </div>
-  </body>
-</html>
+<footer>© 2025 SpaceEagle. All Rights Reserved.</footer>
+</body></html>
