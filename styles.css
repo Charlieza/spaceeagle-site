@@ -22,3 +22,5 @@ input, textarea { width:100%; padding:12px; border-radius:8px; border:1px solid 
 button { padding:12px 20px; background:#1e3a8a; border:none; border-radius:8px; color:white; font-size:16px; cursor:pointer; }
 button:hover { background:#172554; }
 footer { padding:40px; text-align:center; color:#64748b; border-top:1px solid #e2e8f0; }
+
+nav a.active { color:#1e3a8a; border-bottom:2px solid #1e3a8a; padding-bottom:4px; }
