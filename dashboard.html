@@ -16,7 +16,7 @@
 
 <div class='hero'>
   <h1>EagleNatureInsight Dashboard</h1>
-  <p>Interactive LEAP-aligned nature intelligence dashboard for screening sites, reviewing environmental conditions, and generating actionable business insights.</p>
+  <p>Interactive LEAP-aligned nature intelligence dashboards for screening sites, reviewing environmental conditions, and generating actionable business insights.</p>
   <p>
     <a href='eaglenatureinsight.html' style='display:inline-block; margin-top:16px; padding:12px 22px; background:#163d63; color:#fff; text-decoration:none; border-radius:8px; font-weight:600;'>
       Back to EagleNatureInsight
@@ -25,15 +25,16 @@
 </div>
 
 <div class='section'>
-  <div class='card-section'>
-    <h2>Live Dashboard</h2>
-    <p>Use the embedded dashboard below to explore site-specific nature intelligence outputs directly within the SpaceEagle experience.</p>
 
-    <div style='position:relative; width:100%; min-height:950px; border:1px solid #ddd; border-radius:12px; overflow:hidden; background:#fff;'>
+  <div class='card-section'>
+    <h2>Streamlit Dashboard</h2>
+    <p>This version provides a more modern reporting experience with downloadable outputs and a cleaner dashboard workflow.</p>
+
+    <div style='position:relative; width:100%; min-height:900px; border:1px solid #ddd; border-radius:12px; overflow:hidden; background:#fff;'>
       <iframe
-        src='https://eaglenatureinsight-app-dzqvscpgjgwcms8ircwpry.streamlit.app/?embedded=true'
-        title='EagleNatureInsight Dashboard'
-        style='width:100%; height:950px; border:0; display:block; background:#fff;'
+        src='https://eaglenatureinsight-app-dzqvscpgjgwcms8ircwpry.streamlit.app/'
+        title='EagleNatureInsight Streamlit Dashboard'
+        style='width:100%; height:900px; border:0; display:block; background:#fff;'
         loading='lazy'
         referrerpolicy='strict-origin-when-cross-origin'>
       </iframe>
@@ -41,7 +42,28 @@
 
     <p style='margin-top:16px;'>
       <a href='https://eaglenatureinsight-app-dzqvscpgjgwcms8ircwpry.streamlit.app/' target='_blank' rel='noopener noreferrer' style='display:inline-block; padding:12px 22px; background:#163d63; color:#fff; text-decoration:none; border-radius:8px; font-weight:600;'>
-        Open Dashboard in New Tab
+        Open Streamlit Dashboard in New Tab
+      </a>
+    </p>
+  </div>
+
+  <div class='card-section'>
+    <h2>Earth Engine Dashboard</h2>
+    <p>This version runs directly on Google Earth Engine and is useful for exploring the original geospatial workflow and Earth observation outputs.</p>
+
+    <div style='position:relative; width:100%; min-height:900px; border:1px solid #ddd; border-radius:12px; overflow:hidden; background:#fff;'>
+      <iframe
+        src='https://eagle-487419.projects.earthengine.app/view/leap'
+        title='EagleNatureInsight Earth Engine Dashboard'
+        style='width:100%; height:900px; border:0; display:block; background:#fff;'
+        loading='lazy'
+        referrerpolicy='strict-origin-when-cross-origin'>
+      </iframe>
+    </div>
+
+    <p style='margin-top:16px;'>
+      <a href='https://eagle-487419.projects.earthengine.app/view/leap' target='_blank' rel='noopener noreferrer' style='display:inline-block; padding:12px 22px; background:#163d63; color:#fff; text-decoration:none; border-radius:8px; font-weight:600;'>
+        Open Earth Engine Dashboard in New Tab
       </a>
     </p>
   </div>
@@ -51,18 +73,19 @@
     <div class='grid'>
       <div class='card'>
         <h3>Locate</h3>
-        <p>Define the business area, focus on a preset location, draw a polygon, or enter coordinates to identify the site being assessed.</p>
+        <p>Define the business area, focus on a preset location, or draw a polygon to identify the site being assessed.</p>
       </div>
       <div class='card'>
         <h3>Evaluate</h3>
-        <p>Review current land cover, vegetation condition, vegetation change, forest loss, and historical environmental trends around the selected area.</p>
+        <p>Review land cover, vegetation condition, forest loss, satellite imagery, and historical environmental trends around the selected area.</p>
       </div>
       <div class='card'>
         <h3>Assess & Prepare</h3>
-        <p>See dashboard-based risk signals, plain-language outputs, practical recommendations, and downloadable report outputs.</p>
+        <p>See dashboard-based risk signals, practical recommendations, downloadable outputs, and reporting-ready results.</p>
       </div>
     </div>
   </div>
+
 </div>
 
 <footer>© 2025 SpaceEagle. All Rights Reserved.</footer>
