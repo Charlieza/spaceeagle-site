@@ -1,23 +1,328 @@
-<html><head><link rel='stylesheet' href='styles.css'><title>SpaceEagle</title></head><body>
-<header><img src='spaceeagle-logo.svg'><h2>SpaceEagle</h2>
-<nav><a href='about.html'>About</a><a href='eaglenatureinsight.html'>EagleNatureInsight</a><a href='contact.html'>Contact</a></nav></header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="spaceeagle-logo.svg">
+<title>SpaceEagle — Satellite Connectivity & Earth Intelligence for Africa</title>
+</head>
+<body>
 
-<div class='hero'>
-<h1>Satellite-Powered Connectivity & Intelligence</h1>
-<p>Premium broadband and next-generation Earth-observation intelligence for governments, enterprises, and communities across the continent.</p>
+<header>
+  <a class="brand" href="index.html">
+    <img src="spaceeagle-logo.svg" alt="SpaceEagle">
+    <h2>Space<em>Eagle</em></h2>
+  </a>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="eaglenatureinsight.html">EagleNatureInsight</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="cta">Talk to us</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="eyebrow reveal"><span class="dot"></span> Live • Earth Observation across Africa</span>
+  <h1 class="reveal d1">Satellite connectivity &amp;<br><em>Earth intelligence</em> for a continent in motion.</h1>
+  <p class="reveal d2">Premium broadband and next-generation Earth-observation intelligence for governments, enterprises, and communities — engineered for Africa, deployable anywhere.</p>
+  <div class="hero-actions reveal d3">
+    <a href="#suite" class="btn btn-primary">Explore the suite →</a>
+    <a href="eaglenatureinsight.html" class="btn btn-ghost">Launch Nature Intelligence</a>
+  </div>
+
+  <!-- Orbital graphic -->
+  <div class="orbit-stage reveal d4">
+    <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="earthGrad" cx="40%" cy="40%">
+          <stop offset="0%"  stop-color="#3b82f6"/>
+          <stop offset="55%" stop-color="#1e3a8a"/>
+          <stop offset="100%" stop-color="#0c1335"/>
+        </radialGradient>
+        <linearGradient id="satGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%"  stop-color="#6ee7ff"/>
+          <stop offset="100%" stop-color="#8b5cf6"/>
+        </linearGradient>
+        <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="6"/>
+        </filter>
+      </defs>
+
+      <!-- orbital rings -->
+      <circle class="ring" cx="300" cy="300" r="120"/>
+      <circle class="ring" cx="300" cy="300" r="180"/>
+      <circle class="ring" cx="300" cy="300" r="240" stroke-dasharray="2 6"/>
+      <circle class="ring" cx="300" cy="300" r="290" stroke-dasharray="1 10"/>
+
+      <!-- planet -->
+      <circle class="core" cx="300" cy="300" r="80"/>
+      <circle cx="300" cy="300" r="80" fill="none" stroke="rgba(110,231,255,0.4)" stroke-width="1"/>
+      <!-- continent suggestion -->
+      <path d="M280 270 Q300 260 320 275 Q335 295 325 320 Q310 345 285 335 Q265 320 270 295 Z" fill="rgba(74,222,128,0.35)"/>
+      <path d="M295 250 Q310 245 318 255 Q320 265 305 268 Q288 265 295 250 Z" fill="rgba(74,222,128,0.25)"/>
+
+      <!-- satellite 1 -->
+      <g class="satellite-group">
+        <g transform="translate(420 300)">
+          <rect x="-8" y="-5" width="16" height="10" fill="url(#satGrad)"/>
+          <rect x="-22" y="-2" width="12" height="4" fill="#6ee7ff" opacity="0.9"/>
+          <rect x="10" y="-2" width="12" height="4" fill="#6ee7ff" opacity="0.9"/>
+          <circle r="3" fill="#fff" filter="url(#soft)" opacity="0.6"/>
+        </g>
+      </g>
+
+      <!-- satellite 2 -->
+      <g class="satellite-group-2">
+        <g transform="translate(120 300)">
+          <rect x="-7" y="-4" width="14" height="8" fill="url(#satGrad)"/>
+          <rect x="-18" y="-1.5" width="10" height="3" fill="#f0abfc" opacity="0.9"/>
+          <rect x="8" y="-1.5" width="10" height="3" fill="#f0abfc" opacity="0.9"/>
+        </g>
+      </g>
+
+      <!-- satellite 3 -->
+      <g class="satellite-group-3">
+        <g transform="translate(300 590)">
+          <circle r="4" fill="#fff"/>
+          <circle r="10" fill="none" stroke="#fff" stroke-width="0.5" opacity="0.4"/>
+        </g>
+      </g>
+
+      <!-- ground beam -->
+      <path d="M300 300 L490 470" stroke="rgba(110,231,255,0.35)" stroke-width="1" stroke-dasharray="3 4"/>
+      <circle cx="490" cy="470" r="4" fill="#6ee7ff"/>
+      <circle cx="490" cy="470" r="12" fill="none" stroke="#6ee7ff" opacity="0.4"/>
+    </svg>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat">
+    <div class="num">12<em>+</em></div>
+    <div class="label">Product Lines</div>
+  </div>
+  <div class="stat">
+    <div class="num">54</div>
+    <div class="label">African Markets</div>
+  </div>
+  <div class="stat">
+    <div class="num">99.9<em>%</em></div>
+    <div class="label">Target Uptime</div>
+  </div>
+  <div class="stat">
+    <div class="num">5<em>min</em></div>
+    <div class="label">Risk Scorecards</div>
+  </div>
 </div>
 
-<div class='section'><h2>Our Product Suite</h2><div class='grid'>
-<a href='eaglenet.html' class='card'><img src='img-eaglenet.svg'><h3>EagleNet Connectivity</h3><p>Premium satellite-backed broadband for enterprise and rural expansion.</p></a>
-<a href='eaglehome.html' class='card'><img src='img-eaglehome.svg'><h3>EagleHome Internet</h3><p>Fast, reliable consumer-grade satellite broadband.</p></a>
-<a href='eaglevillage.html' class='card'><img src='img-eaglevillage.svg'><h3>EagleVillage Community Access</h3><p>Shared community Wi-Fi powered by satellite.</p></a>
-<a href='eaglemap.html' class='card'><img src='img-eaglemap.svg'><h3>EagleMap Geospatial</h3><p>Rapid-access mapping intelligence.</p></a>
-<a href='eaglegeo.html' class='card'><img src='img-eaglegeo.svg'><h3>EagleGeo Analytics</h3><p>On-demand geospatial analytics for decision-makers.</p></a>
-<a href='eagleagri.html' class='card'><img src='img-eagleagri.svg'><h3>EagleAgri EO for Agriculture</h3><p>Satellite-enabled agricultural intelligence.</p></a>
-<a href='eaglerisk.html' class='card'><img src='img-eaglerisk.svg'><h3>EagleRisk Disaster & Risk</h3><p>Risk and climate insight dashboards.</p></a>
-<a href='eagleclimate.html' class='card'><img src='img-eagleclimate.svg'><h3>EagleClimate Insights</h3><p>Climate trend tracking & environmental monitoring.</p></a>
-<a href='eaglesas.html' class='card'><img src='img-eaglesas.svg'><h3>EagleSAS Spatial Suite</h3><p>Advanced spatial analysis toolkit.</p></a>
-<a href='eaglesovereign.html' class='card'><img src='img-eaglesovereign.svg'><h3>EagleSovereign EO Systems</h3><p>Sovereign-grade Earth observation solutions.</p></a>
-<a href='eaglecapacity.html' class='card'><img src='img-eaglecapacity.svg'><h3>EagleCapacity Training</h3><p>Capacity building & EO skills development.</p></a>
-<a href='eaglenatureinsight.html' class='card'><img src='img-eaglenatureinsight.png'><h3>EagleNatureInsight Nature Intelligence</h3><p>TNFD-aligned nature intelligence and risk scorecards for SMEs.</p></a>
-</div></div><footer>© 2025 SpaceEagle. All Rights Reserved.</footer></body></html>
+<!-- PRODUCT SUITE -->
+<section class="section" id="suite">
+  <div class="section-head">
+    <div>
+      <div class="tag">// THE EAGLE SUITE</div>
+      <h2>One platform.<br><em>Twelve specialised missions.</em></h2>
+    </div>
+    <p class="subtitle">From sovereign Earth observation to a community Wi-Fi hotspot — every product runs on the same satellite-grade infrastructure.</p>
+  </div>
+
+  <div class="grid">
+
+    <a href="eaglenatureinsight.html" class="card featured">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M5 5l14 14M5 19L19 5"/></svg>
+      </div>
+      <h3>EagleNatureInsight™ — Nature Intelligence</h3>
+      <p>TNFD-aligned nature risk scorecards for SMEs and supply chains. Turn satellite Earth-observation data into a 5-minute, decision-ready summary.</p>
+      <span class="arrow"><span>Open product</span><span>→</span></span>
+    </a>
+
+    <a href="eaglenet.html" class="card">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0114 0M2 12a10 10 0 0120 0M8 12a4 4 0 018 0"/><circle cx="12" cy="20" r="1.5" fill="currentColor" stroke="none"/></svg>
+      </div>
+      <h3>EagleNet</h3>
+      <p>Premium satellite-backed broadband for enterprise and rural expansion.</p>
+      <span class="arrow"><span>Connectivity</span><span>→</span></span>
+    </a>
+
+    <a href="eaglehome.html" class="card">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a2 2 0 01-2 2h-4v-6h-6v6H5a2 2 0 01-2-2z"/></svg>
+      </div>
+      <h3>EagleHome</h3>
+      <p>Fast, reliable consumer-grade satellite broadband.</p>
+      <span class="arrow"><span>Home Internet</span><span>→</span></span>
+    </a>
+
+    <a href="eaglevillage.html" class="card">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="3"/><circle cx="17" cy="9" r="3"/><circle cx="13" cy="16" r="3"/><path d="M9 12v3M17 12v3"/></svg>
+      </div>
+      <h3>EagleVillage</h3>
+      <p>Shared community Wi-Fi powered by satellite.</p>
+      <span class="arrow"><span>Community Access</span><span>→</span></span>
+    </a>
+
+    <a href="eaglemap.html" class="card">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>
+      </div>
+      <h3>EagleMap</h3>
+      <p>Rapid-access mapping intelligence.</p>
+      <span class="arrow"><span>Geospatial</span><span>→</span></span>
+    </a>
+
+    <a href="eaglegeo.html" class="card">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+      </div>
+      <h3>EagleGeo</h3>
+      <p>On-demand geospatial analytics for decision-makers.</p>
+      <span class="arrow"><span>Analytics</span><span>→</span></span>
+    </a>
+
+    <a href="eagleagri.html" class="card">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M12 22V8M12 8c0-3 2-6 6-6 0 4-2 6-6 6zM12 8c0-3-2-6-6-6 0 4 2 6 6 6zM12 14c0-2 1.5-4 4-4 0 3-1.5 4-4 4zM12 14c0-2-1.5-4-4-4 0 3 1.5 4 4 4z"/></svg>
+      </div>
+      <h3>EagleAgri</h3>
+      <p>Satellite-enabled agricultural intelligence.</p>
+      <span class="arrow"><span>EO for Agriculture</span><span>→</span></span>
+    </a>
+
+    <a href="eaglerisk.html" class="card">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 20h20L12 2z"/><path d="M12 10v5M12 18v.5"/></svg>
+      </div>
+      <h3>EagleRisk</h3>
+      <p>Risk and climate insight dashboards.</p>
+      <span class="arrow"><span>Disaster & Risk</span><span>→</span></span>
+    </a>
+
+    <a href="eagleclimate.html" class="card">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M5 18a4 4 0 010-8 6 6 0 0111-2 5 5 0 014 8"/><path d="M8 22l2-4M14 22l2-4M11 22l1-3"/></svg>
+      </div>
+      <h3>EagleClimate</h3>
+      <p>Climate trend tracking & environmental monitoring.</p>
+      <span class="arrow"><span>Climate Insights</span><span>→</span></span>
+    </a>
+
+    <a href="eaglesas.html" class="card">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      </div>
+      <h3>EagleSAS</h3>
+      <p>Advanced spatial analysis toolkit.</p>
+      <span class="arrow"><span>Spatial Suite</span><span>→</span></span>
+    </a>
+
+    <a href="eaglesovereign.html" class="card">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+      </div>
+      <h3>EagleSovereign</h3>
+      <p>Sovereign-grade Earth observation solutions.</p>
+      <span class="arrow"><span>EO Systems</span><span>→</span></span>
+    </a>
+
+    <a href="eaglecapacity.html" class="card">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <h3>EagleCapacity</h3>
+      <p>Capacity building & EO skills development.</p>
+      <span class="arrow"><span>Training</span><span>→</span></span>
+    </a>
+
+  </div>
+</section>
+
+<!-- WHY US / FEATURE BAND -->
+<section class="section">
+  <div class="section-head">
+    <div>
+      <div class="tag">// THE PLATFORM</div>
+      <h2>Built for reliability.<br><em>Designed for Africa.</em></h2>
+    </div>
+    <p class="subtitle">Every Eagle product inherits the same foundation: premium satellite infrastructure, low-bandwidth-first software, and rapid deployment by design.</p>
+  </div>
+
+  <div class="feature-list">
+    <div class="feat">
+      <div class="num">01</div>
+      <h4>Sovereign-grade reliability</h4>
+      <p>Mission-class infrastructure with 99.9% uptime targets — engineered for governments, banks, and critical operators.</p>
+    </div>
+    <div class="feat">
+      <div class="num">02</div>
+      <h4>Low-bandwidth ready</h4>
+      <p>Every interface optimised for mobile and intermittent connectivity, so it works in the field — not just the boardroom.</p>
+    </div>
+    <div class="feat">
+      <div class="num">03</div>
+      <h4>Rapid deployment</h4>
+      <p>From signed agreement to operational service: deploy in weeks, not quarters. Minimal maintenance overhead.</p>
+    </div>
+    <div class="feat">
+      <div class="num">04</div>
+      <h4>Open by API</h4>
+      <p>Seamless API integration with ERP, GIS, financial, and government systems. No lock-in, no proprietary walls.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-strip">
+  <h2>Ready to put a <em>satellite</em> on it?</h2>
+  <p>Whether you're a ministry, a multinational, or a co-operative — let's design the right Eagle deployment for your mission.</p>
+  <a href="contact.html" class="btn btn-accent">Start the conversation →</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">
+        <img src="spaceeagle-logo.svg" alt="SpaceEagle">
+        <span>SpaceEagle</span>
+      </div>
+      <p class="footer-tag">Satellite-powered connectivity and Earth-observation intelligence for governments, enterprises, and communities across Africa.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="eaglenet.html">EagleNet</a></li>
+        <li><a href="eaglehome.html">EagleHome</a></li>
+        <li><a href="eaglemap.html">EagleMap</a></li>
+        <li><a href="eaglenatureinsight.html">EagleNatureInsight</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Solutions</h4>
+      <ul>
+        <li><a href="eagleagri.html">Agriculture</a></li>
+        <li><a href="eaglerisk.html">Disaster & Risk</a></li>
+        <li><a href="eagleclimate.html">Climate</a></li>
+        <li><a href="eaglesovereign.html">Government</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="mailto:info@spaceeagle.space">info@spaceeagle.space</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 SpaceEagle · All Rights Reserved</span>
+    <span>Made on Earth · Pointed at the sky</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,19 +1,119 @@
-<html><head><link rel='stylesheet' href='styles.css'><title>Contact SpaceEagle</title></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="spaceeagle-logo.svg">
+<title>Contact — SpaceEagle</title>
+</head>
 <body>
-<header><a href='index.html'><img src='spaceeagle-logo.svg'></a><h2>SpaceEagle</h2>
-<nav><a href='about.html'>About</a><a href='eaglenatureinsight.html'>EagleNatureInsight</a><a href='contact.html' class='active'>Contact</a></nav></header>
 
-<div class='section'>
-<h1>Contact Us</h1>
-<p>Our team is ready to support your connectivity, geospatial, or intelligence needs.</p>
+<header>
+  <a class="brand" href="index.html">
+    <img src="spaceeagle-logo.svg" alt="SpaceEagle">
+    <h2>Space<em>Eagle</em></h2>
+  </a>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="eaglenatureinsight.html">EagleNatureInsight</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="contact.html" class="cta">Talk to us</a>
+  </nav>
+</header>
 
-<form action="mailto:info@spaceeagle.space" method="post" enctype="text/plain" style='max-width:600px;'>
-<label>Name<br><input type='text' name='name'></label><br><br>
-<label>Email<br><input type='email' name='email'></label><br><br>
-<label>Message<br><textarea name='message' rows='6'></textarea></label><br><br>
-<button type='submit'>Send Message</button>
-</form>
+<div class="page-content">
+  <span class="eyebrow reveal" style="display:inline-flex; align-items:center; gap:10px; padding:7px 14px; border:1px solid var(--line-2); border-radius:999px; font-family:var(--mono); font-size:11px; letter-spacing:0.25em; text-transform:uppercase; color:var(--text-mute); background:rgba(255,255,255,0.025); margin-bottom:24px;">
+    <span style="width:6px;height:6px;border-radius:50%;background:var(--signal);box-shadow:0 0 12px var(--signal);"></span>
+    Mission control online
+  </span>
+  <h1 class="reveal d1">Let's <em>talk.</em></h1>
+  <p class="lede reveal d2">Our team is ready to support your connectivity, geospatial, or intelligence needs — from a single pilot site to a national rollout.</p>
+
+  <div style="display:grid; grid-template-columns: 1.4fr 1fr; gap: 40px; margin-top:20px;" class="contact-grid">
+    <div class="card-section" style="margin-top:0;">
+      <h2>Send a transmission</h2>
+      <form action="mailto:info@spaceeagle.space" method="post" enctype="text/plain">
+        <label>Name
+          <input type="text" name="name" placeholder="Your full name">
+        </label>
+        <label>Email
+          <input type="email" name="email" placeholder="you@organisation.com">
+        </label>
+        <label>Organisation
+          <input type="text" name="org" placeholder="Company, ministry, NGO…">
+        </label>
+        <label>Message
+          <textarea name="message" rows="6" placeholder="Tell us what you're trying to achieve…"></textarea>
+        </label>
+        <button type="submit" class="btn btn-accent" style="width:100%; justify-content:center;">Send Message →</button>
+      </form>
+    </div>
+
+    <div>
+      <div class="card-section" style="margin-top:0;">
+        <h2 style="font-size:22px;">Direct channels</h2>
+        <p style="font-family:var(--mono); font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-mute); margin:14px 0 4px;">Email</p>
+        <p><a href="mailto:info@spaceeagle.space" style="color:var(--aurora-1); text-decoration:none;">info@spaceeagle.space</a></p>
+        <p style="font-family:var(--mono); font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-mute); margin:18px 0 4px;">For</p>
+        <p>Connectivity pilots, EO procurement, partnership enquiries, capacity programmes, and EagleNatureInsight onboarding.</p>
+      </div>
+
+      <div class="card-section">
+        <h2 style="font-size:22px;">Typical response</h2>
+        <p>We aim to reply to qualified enquiries within <strong style="color:var(--text);">two business days.</strong> For pilot programmes, expect a short scoping call as the first step.</p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<footer>© 2025 SpaceEagle. All Rights Reserved.</footer>
-</body></html>
+<style>
+  @media (max-width: 880px) {
+    .contact-grid { grid-template-columns: 1fr !important; }
+  }
+</style>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">
+        <img src="spaceeagle-logo.svg" alt="SpaceEagle">
+        <span>SpaceEagle</span>
+      </div>
+      <p class="footer-tag">Satellite-powered connectivity and Earth-observation intelligence for governments, enterprises, and communities across Africa.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="eaglenet.html">EagleNet</a></li>
+        <li><a href="eaglehome.html">EagleHome</a></li>
+        <li><a href="eaglemap.html">EagleMap</a></li>
+        <li><a href="eaglenatureinsight.html">EagleNatureInsight</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Solutions</h4>
+      <ul>
+        <li><a href="eagleagri.html">Agriculture</a></li>
+        <li><a href="eaglerisk.html">Disaster & Risk</a></li>
+        <li><a href="eagleclimate.html">Climate</a></li>
+        <li><a href="eaglesovereign.html">Government</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="mailto:info@spaceeagle.space">info@spaceeagle.space</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 SpaceEagle · All Rights Reserved</span>
+    <span>Made on Earth · Pointed at the sky</span>
+  </div>
+</footer>
+
+</body>
+</html>
