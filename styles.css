@@ -880,3 +880,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 /* Keep first-load content visible, including slow connections and saved pages. */
 .reveal { opacity:1; transform:none; animation:none; }
+
+.capability-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.capability-grid .primary-feat { grid-column:1/-1; }
+@media(max-width:760px) { .capability-grid { grid-template-columns:1fr; } }
