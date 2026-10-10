@@ -884,3 +884,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .capability-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
 .capability-grid .primary-feat { grid-column:1/-1; }
 @media(max-width:760px) { .capability-grid { grid-template-columns:1fr; } }
+/* Section links land below the desktop sticky navigation. */
+#main, #suite, #how, #mission { scroll-margin-top:128px; }
+@media(max-width:760px) { #main, #suite, #how, #mission { scroll-margin-top:20px; } }
