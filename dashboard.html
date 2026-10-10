@@ -3,128 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Access your EagleNatureInsight business workspace, assessments and nature intelligence reports.">
+<meta name="theme-color" content="#081323">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="spaceeagle-logo.svg">
-<title>EagleNatureInsight Dashboard | SpaceEagle</title>
+<title>EagleNatureInsight Dashboard | Space Eagle</title>
 </head>
 <body>
-
+<a href="#main" class="skip-link">Skip to content</a>
 <header>
-  <a class="brand" href="index.html">
-    <img src="spaceeagle-logo.svg" alt="SpaceEagle">
-    <h2>Space<em>Eagle</em></h2>
-  </a>
-  <nav>
+  <a class="brand" href="index.html" aria-label="Space Eagle home"><img src="spaceeagle-logo.svg" alt="Space Eagle Enterprise" width="1200" height="390"></a>
+  <nav aria-label="Main navigation">
     <a href="about.html">About</a>
-    <a href="eaglenatureinsight.html">EagleNatureInsight</a>
+    <a href="eaglenatureinsight.html" class="active" aria-current="page">EagleNatureInsight</a>
+    <a href="connectivity.html">Connectivity</a>
     <a href="contact.html">Contact</a>
     <a href="contact.html" class="cta">Talk to us</a>
   </nav>
 </header>
-
-<div class="page-content">
-  <span class="eyebrow reveal" style="display:inline-flex; align-items:center; gap:10px; padding:7px 14px; border:1px solid var(--line-2); border-radius:999px; font-family:var(--mono); font-size:11px; letter-spacing:0.25em; text-transform:uppercase; color:var(--aurora-1); background:rgba(110,231,255,0.06); margin-bottom:24px;">
-    <span style="width:6px;height:6px;border-radius:50%;background:var(--signal);box-shadow:0 0 12px var(--signal);"></span>
-    Mission Console · LEAP-aligned
-  </span>
-  <h1 class="reveal d1">EagleNatureInsight<br><em>Dashboard.</em></h1>
-  <p class="lede reveal d2">Interactive LEAP-aligned nature intelligence dashboards for screening sites, reviewing environmental conditions, and generating actionable business insights.</p>
-  <p class="reveal d3"><a href="eaglenatureinsight.html" class="btn btn-ghost">← Back to EagleNatureInsight</a></p>
-
-  <div class="card-section">
-    <h2>Streamlit Dashboard</h2>
-    <p>A modern reporting experience with downloadable outputs and a cleaner dashboard workflow.</p>
-    <div style="padding:30px; border:1px solid var(--line); border-radius:var(--radius); background:rgba(110,231,255,0.04); text-align:center; margin-top:20px;">
-      <p style="margin:0 0 22px; color:var(--text-soft);">Open the Streamlit dashboard in a new tab to use the full interactive experience.</p>
-      <a href="https://eaglenatureinsight-app-dzqvscpgjgwcms8ircwpry.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
-        Open Streamlit Dashboard ↗
-      </a>
-    </div>
-  </div>
-
-  <div class="card-section">
-    <h2>Earth Engine Dashboard</h2>
-    <p>Runs directly on Google Earth Engine — useful for exploring the original geospatial workflow and Earth-observation outputs.</p>
-    <div style="position:relative; width:100%; min-height:900px; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:#fff; margin-top:20px;">
-      <iframe
-        src="https://eagle-487419.projects.earthengine.app/view/leap"
-        title="EagleNatureInsight Earth Engine Dashboard"
-        style="width:100%; height:900px; border:0; display:block; background:#fff;"
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin">
-      </iframe>
-    </div>
-    <p style="margin-top:20px;">
-      <a href="https://eagle-487419.projects.earthengine.app/view/leap" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
-        Open Earth Engine in New Tab ↗
-      </a>
-    </p>
-  </div>
-
-  <div class="card-section">
-    <h2>What you can do</h2>
-    <div class="grid" style="margin-top:18px;">
-      <div class="card" style="background:rgba(255,255,255,0.03);">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8z"/></svg></div>
-        <h3 style="font-family:var(--display); font-weight:400; font-size:22px;">Locate</h3>
-        <p>Define the business area, focus on a preset location, or draw a polygon to identify the site being assessed.</p>
-      </div>
-      <div class="card" style="background:rgba(255,255,255,0.03);">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M21 12c0 5-4 9-9 9s-9-4-9-9 4-9 9-9"/><path d="M3 12h6l3-9 3 18 3-9h3"/></svg></div>
-        <h3 style="font-family:var(--display); font-weight:400; font-size:22px;">Evaluate</h3>
-        <p>Review land cover, vegetation condition, forest loss, satellite imagery, and historical environmental trends.</p>
-      </div>
-      <div class="card" style="background:rgba(255,255,255,0.03);">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
-        <h3 style="font-family:var(--display); font-weight:400; font-size:22px;">Assess &amp; Prepare</h3>
-        <p>See dashboard-based risk signals, practical recommendations, downloadable outputs, and reporting-ready results.</p>
-      </div>
-    </div>
-  </div>
-
-</div>
-
+<main id="main"><div class="page-content"><span class="eyebrow">// EagleNatureInsight workspace</span><h1>Your business.<br><em>Your nature insight.</em></h1><p class="lede">Open EagleNatureInsight to choose your workspace, assess a site, review its evidence and download your report.</p><section class="card-section"><h2>Open your workspace</h2><p>Use your email and password or Google sign-in to access the platform. Pilot users can choose their assigned business profile.</p><a class="btn btn-accent" href="https://natureinsight.spaceeagle.space/">Open the dashboard →</a></section><p class="related-link"><a href="eaglenatureinsight.html">Learn how the assessment works →</a></p></div></main>
 <footer>
   <div class="footer-inner">
     <div>
-      <div class="footer-brand">
-        <img src="spaceeagle-logo.svg" alt="SpaceEagle">
-        <span>SpaceEagle</span>
-      </div>
-      <p class="footer-tag">Satellite-powered connectivity and Earth-observation intelligence for governments, enterprises, and communities across Africa.</p>
+      <a class="footer-brand" href="index.html" aria-label="Space Eagle home"><img src="spaceeagle-logo.svg" alt="Space Eagle Enterprise" width="1200" height="390"></a>
+      <p class="footer-tag">Nature intelligence and Earth observation. From a clearer picture of your business to practical action on the ground.</p>
     </div>
-    <div class="footer-col">
-      <h4>Products</h4>
-      <ul>
-        <li><a href="eaglenet.html">EagleNet</a></li>
-        <li><a href="eaglehome.html">EagleHome</a></li>
-        <li><a href="eaglemap.html">EagleMap</a></li>
-        <li><a href="eaglenatureinsight.html">EagleNatureInsight</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Solutions</h4>
-      <ul>
-        <li><a href="eagleagri.html">Agriculture</a></li>
-        <li><a href="eaglerisk.html">Disaster & Risk</a></li>
-        <li><a href="eagleclimate.html">Climate</a></li>
-        <li><a href="eaglesovereign.html">Government</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="mailto:info@spaceeagle.space">info@spaceeagle.space</a></li>
-      </ul>
-    </div>
+    <div class="footer-col"><h4>Explore</h4><ul>
+      <li><a href="eaglenatureinsight.html">EagleNatureInsight</a></li><li><a href="eagleagri.html">Agriculture</a></li><li><a href="eagleclimate.html">Climate</a></li><li><a href="connectivity.html">Connectivity</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Company</h4><ul>
+      <li><a href="about.html">About</a></li><li><a href="about.html#mission">Mission &amp; vision</a></li><li><a href="contact.html">Contact</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Stay connected</h4><ul>
+      <li><a href="mailto:info@spaceeagle.space">info@spaceeagle.space</a></li><li><a href="image-credits.html">Image credits</a></li>
+    </ul></div>
   </div>
-  <div class="footer-bottom">
-    <span>© 2025 SpaceEagle · All Rights Reserved</span>
-    <span>Made on Earth · Pointed at the sky</span>
-  </div>
+  <div class="footer-bottom"><span>© 2026 Space Eagle · All Rights Reserved</span><span>Made on Earth · Pointed at the sky</span></div>
 </footer>
-
 </body>
 </html>

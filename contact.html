@@ -9,30 +9,30 @@
 </head>
 <body>
 
+<a href="#main" class="skip-link">Skip to content</a>
 <header>
-  <a class="brand" href="index.html">
-    <img src="spaceeagle-logo.svg" alt="SpaceEagle">
-    <h2>Space<em>Eagle</em></h2>
-  </a>
-  <nav>
+  <a class="brand" href="index.html" aria-label="Space Eagle home"><img src="spaceeagle-logo.svg" alt="Space Eagle Enterprise" width="1200" height="390"></a>
+  <nav aria-label="Main navigation">
     <a href="about.html">About</a>
     <a href="eaglenatureinsight.html">EagleNatureInsight</a>
-    <a href="contact.html" class="active">Contact</a>
+    <a href="connectivity.html">Connectivity</a>
+    <a href="contact.html" class="active" aria-current="page">Contact</a>
     <a href="contact.html" class="cta">Talk to us</a>
   </nav>
 </header>
+<main id="main">
 
 <div class="page-content">
   <span class="eyebrow reveal" style="display:inline-flex; align-items:center; gap:10px; padding:7px 14px; border:1px solid var(--line-2); border-radius:999px; font-family:var(--mono); font-size:11px; letter-spacing:0.25em; text-transform:uppercase; color:var(--text-mute); background:rgba(255,255,255,0.025); margin-bottom:24px;">
     <span style="width:6px;height:6px;border-radius:50%;background:var(--signal);box-shadow:0 0 12px var(--signal);"></span>
-    Mission control online
+    Talk to Space Eagle
   </span>
   <h1 class="reveal d1">Let's <em>talk.</em></h1>
-  <p class="lede reveal d2">Our team is ready to support your connectivity, geospatial, or intelligence needs — from a single pilot site to a national rollout.</p>
+  <p class="lede reveal d2">Tell us about your business, the places you operate and the decisions you need to make. We can discuss nature intelligence, Earth observation or a pilot that fits your needs.</p>
 
   <div style="display:grid; grid-template-columns: 1.4fr 1fr; gap: 40px; margin-top:20px;" class="contact-grid">
     <div class="card-section" style="margin-top:0;">
-      <h2>Send a transmission</h2>
+      <h2>Start a conversation</h2>
       <form action="mailto:info@spaceeagle.space" method="post" enctype="text/plain">
         <label>Name
           <input type="text" name="name" placeholder="Your full name">
@@ -46,8 +46,8 @@
         <label>Message
           <textarea name="message" rows="6" placeholder="Tell us what you're trying to achieve…"></textarea>
         </label>
-        <button type="submit" class="btn btn-accent" style="width:100%; justify-content:center;">Send Message →</button>
-      </form>
+        <button type="submit" class="btn btn-accent" style="width:100%; justify-content:center;">Open email draft →</button>
+      <p class="form-note">This opens your email app with the details you entered. Review and send your message there.</p></form>
     </div>
 
     <div>
@@ -56,7 +56,7 @@
         <p style="font-family:var(--mono); font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-mute); margin:14px 0 4px;">Email</p>
         <p><a href="mailto:info@spaceeagle.space" style="color:var(--aurora-1); text-decoration:none;">info@spaceeagle.space</a></p>
         <p style="font-family:var(--mono); font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-mute); margin:18px 0 4px;">For</p>
-        <p>Connectivity pilots, EO procurement, partnership enquiries, capacity programmes, and EagleNatureInsight onboarding.</p>
+        <p>EagleNatureInsight pilots, nature intelligence, Earth observation, partnerships, skills development and connectivity enquiries.</p>
       </div>
 
       <div class="card-section">
@@ -73,46 +73,24 @@
   }
 </style>
 
+</main>
 <footer>
   <div class="footer-inner">
     <div>
-      <div class="footer-brand">
-        <img src="spaceeagle-logo.svg" alt="SpaceEagle">
-        <span>SpaceEagle</span>
-      </div>
-      <p class="footer-tag">Satellite-powered connectivity and Earth-observation intelligence for governments, enterprises, and communities across Africa.</p>
+      <a class="footer-brand" href="index.html" aria-label="Space Eagle home"><img src="spaceeagle-logo.svg" alt="Space Eagle Enterprise" width="1200" height="390"></a>
+      <p class="footer-tag">Nature intelligence and Earth observation. From a clearer picture of your business to practical action on the ground.</p>
     </div>
-    <div class="footer-col">
-      <h4>Products</h4>
-      <ul>
-        <li><a href="eaglenet.html">EagleNet</a></li>
-        <li><a href="eaglehome.html">EagleHome</a></li>
-        <li><a href="eaglemap.html">EagleMap</a></li>
-        <li><a href="eaglenatureinsight.html">EagleNatureInsight</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Solutions</h4>
-      <ul>
-        <li><a href="eagleagri.html">Agriculture</a></li>
-        <li><a href="eaglerisk.html">Disaster & Risk</a></li>
-        <li><a href="eagleclimate.html">Climate</a></li>
-        <li><a href="eaglesovereign.html">Government</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="mailto:info@spaceeagle.space">info@spaceeagle.space</a></li>
-      </ul>
-    </div>
+    <div class="footer-col"><h4>Explore</h4><ul>
+      <li><a href="eaglenatureinsight.html">EagleNatureInsight</a></li><li><a href="eagleagri.html">Agriculture</a></li><li><a href="eagleclimate.html">Climate</a></li><li><a href="connectivity.html">Connectivity</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Company</h4><ul>
+      <li><a href="about.html">About</a></li><li><a href="about.html#mission">Mission &amp; vision</a></li><li><a href="contact.html">Contact</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Stay connected</h4><ul>
+      <li><a href="mailto:info@spaceeagle.space">info@spaceeagle.space</a></li><li><a href="image-credits.html">Image credits</a></li>
+    </ul></div>
   </div>
-  <div class="footer-bottom">
-    <span>© 2025 SpaceEagle · All Rights Reserved</span>
-    <span>Made on Earth · Pointed at the sky</span>
-  </div>
+  <div class="footer-bottom"><span>© 2026 Space Eagle · All Rights Reserved</span><span>Made on Earth · Pointed at the sky</span></div>
 </footer>
 
 </body>
